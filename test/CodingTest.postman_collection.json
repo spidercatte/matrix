@@ -1,0 +1,260 @@
+{
+	"info": {
+		"_postman_id": "03b0c21f-5517-45b2-96f4-280797de5e72",
+		"name": "CodingTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4956280"
+	},
+	"item": [
+		{
+			"name": "Echo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/catbalajadia/Downloads/matrix.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/api/echo",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"echo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Empty Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/catbalajadia/Downloads/matrix.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/api/echo",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"echo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid File Format",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/catbalajadia/Downloads/matrix.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/api/echo",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"echo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invalid File Content",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/catbalajadia/Downloads/matrix.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/api/echo",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"echo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Flatten",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/catbalajadia/Downloads/matrix.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/api/flatten",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"flatten"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Invert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/catbalajadia/Downloads/matrix.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/api/invert",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"invert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sum",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/catbalajadia/Downloads/matrix.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/api/sum",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"sum"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Multiply",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/catbalajadia/Downloads/matrix.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8080/api/multiply",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"multiply"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "liveliness",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

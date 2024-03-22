@@ -1,0 +1,128 @@
+openapi: "3.0.3"
+info:
+  title: "test API"
+  description: "test API"
+  version: "1.0.0"
+servers:
+  - url: "https://test"
+paths:
+  /api/hello:
+    get:
+      summary: "GET api/hello"
+      operationId: "hello"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                type: "string"
+  /api/echo:
+    post:
+      summary: "POST api/echo"
+      operationId: "echo"
+      parameters:
+        - name: "file"
+          in: "query"
+          required: true
+          schema:
+            type: "string"
+            format: "binary"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/Output"
+  /api/invert:
+    post:
+      summary: "POST api/invert"
+      operationId: "invert"
+      parameters:
+        - name: "file"
+          in: "query"
+          required: true
+          schema:
+            type: "string"
+            format: "binary"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/Output"
+  /api/flatten:
+    post:
+      summary: "POST api/flatten"
+      operationId: "flatten"
+      parameters:
+        - name: "file"
+          in: "query"
+          required: true
+          schema:
+            type: "string"
+            format: "binary"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/Output"
+  /api/multiply:
+    post:
+      summary: "POST api/multiply"
+      operationId: "multiply"
+      parameters:
+        - name: "file"
+          in: "query"
+          required: true
+          schema:
+            type: "string"
+            format: "binary"
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/Output"
+  /api/sum:
+    post:
+      summary: "POST api/sum"
+      operationId: "sum"
+      parameters:
+        - name: "file"
+          in: "query"
+          required: true
+          schema:
+            type: "string"
+            format: "binary"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: "string"
+              format: "binary"
+        required: true
+      responses:
+        "200":
+          description: "OK"
+          content:
+            '*/*':
+              schema:
+                $ref: "#/components/schemas/Output"
+components:
+  schemas:
+    Output:
+      type: "object"
+      properties:
+        outputStr:
+          type: "string"
+        outputInt:
+          type: "integer"
+          format: "int32"
+        error:
+          type: "string"
